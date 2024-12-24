@@ -1,0 +1,19 @@
+{
+  "name": "Matrix",
+  "description": "Youtube Comment Filter",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.youtube.com/watch?v=*"
+      ]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
