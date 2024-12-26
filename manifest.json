@@ -4,19 +4,19 @@
   "version": "1.0",
   "manifest_version": 3,
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "popup/index.html",
     "default_icon": "icon.png"
   },
   "content_scripts": [
     {
-      "js": ["scripts/content.js"],
+      "js": ["content.js"],
       "matches": [
         "https://www.youtube.com/watch?v=*"
       ]
     }
   ],
   "background": {
-    "service_worker": "scripts/background.js"
+    "service_worker": "background.js"
   },
   "permissions": ["activeTab","storage"]
 }
